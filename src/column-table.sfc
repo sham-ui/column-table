@@ -1,0 +1,11 @@
+<template>
+
+</template>
+
+<script>
+    function ColumnTable() {
+
+    }
+
+    export default Component( Template, ColumnTable );
+</script>
