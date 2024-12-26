@@ -1,10 +1,35 @@
 <template>
-
+    <table class={{classNames}}>
+        <thead>
+            <tr>
+                {% for column of columns %}
+                    <th>
+                        {{column.title}}
+                    </th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for item of items %}
+                <tr>
+                    {% for column of columns %}
+                        <td>
+                            {{column.data( item )}}
+                        </td>
+                    {% endfor %}
+                </tr>        
+            {% endfor %}
+        </tbody>
+    </table>
 </template>
 
 <script>
-    function ColumnTable() {
-
+    function ColumnTable( options ) {
+        options( {
+            [ $.classNames ]: '',
+            [ $.items ]: [],
+            [ $.columns ]: []
+        } );
     }
 
     export default Component( Template, ColumnTable );

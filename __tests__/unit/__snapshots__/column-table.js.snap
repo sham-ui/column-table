@@ -2,7 +2,18 @@
 
 exports[`renders correctly 1`] = `
 Object {
-  "Options": Object {},
-  "html": "",
+  "Options": Object {
+    "classNames": "",
+    "columns": Array [],
+    "items": Array [],
+  },
+  "html": "
+<table class=\\"\\">
+  <thead>
+    <tr></tr>
+  </thead>
+  <tbody></tbody>
+</table>
+",
 }
 `;
