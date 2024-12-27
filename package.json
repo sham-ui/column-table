@@ -59,6 +59,7 @@
     "stylelint-scss": "^3.8.0"
   },
   "dependencies": {
-    "sham-ui": "^6.0.0"
+    "sham-ui": "^6.0.0",
+    "sham-ui-dynamic-component": "^3.0.0"
   }
 }

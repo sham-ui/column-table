@@ -10786,6 +10786,13 @@ sham-ui-directives@^6.0.0:
   resolved "https://registry.yarnpkg.com/sham-ui-directives/-/sham-ui-directives-6.0.0.tgz#78c28e70df3de52028cc7430cd1b3a18795f81a7"
   integrity sha512-cko6vVxqYFDsrRG+OAV/Xuda8Sa6CO0Qp1o8nZZXOEUUh9PfaBtFv1zyDXuwWRpI9dPkOQC7S46Xc/xokhSnYA==
 
+sham-ui-dynamic-component@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/sham-ui-dynamic-component/-/sham-ui-dynamic-component-3.0.0.tgz#d4b4c793bdc11ea09b251dc00d5dd05623293d80"
+  integrity sha512-hyNznmIDxQlFFAx90f0oY0dZiGtfDJN9ahCZ5q3yQ061YxX/MKH6YxcO2dchIGmKqOvM9cjYbDFff8FZfGBcYw==
+  dependencies:
+    sham-ui "^6.0.0"
+
 sham-ui-macro-jest-preprocessor@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/sham-ui-macro-jest-preprocessor/-/sham-ui-macro-jest-preprocessor-1.0.0.tgz#f2e59e596bd7f15a52606fe00c71d90244e2be13"
