@@ -1,20 +1,36 @@
 <template>
+    {% import Dynamic from 'sham-ui-dynamic-component' %}
+    {% import resolver from './resolver' %}
+    
+    {% let resolvedColumns = columns.map( resolver ) %}
+
     <table class={{classNames}}>
         <thead>
             <tr>
-                {% for column of columns %}
-                    <th>
-                        {{column.title}}
+                {% for index, column of resolvedColumns %}
+                    <th class={{column.titleClassNames}}>
+                        <Dynamic 
+                            component={{column.title}}
+                            index={{index}}
+                            getter={{column.titleGetter}}
+                            {{...column.column}}
+                        />
                     </th>
                 {% endfor %}
             </tr>
         </thead>
         <tbody>
-            {% for item of items %}
-                <tr>
-                    {% for column of columns %}
-                        <td>
-                            {{column.data( item )}}
+            {% for index, item of items %}
+                <tr class={{rowClassNames( item, index )}}>
+                    {% for column of resolvedColumns %}
+                        <td class={{column.dataClassNames( item, index )}}>
+                            <Dynamic 
+                                component={{column.data}}
+                                getter={{column.dataGetter}}
+                                index={{index}}
+                                item={{item}}
+                                {{...column.column}}
+                            />
                         </td>
                     {% endfor %}
                 </tr>        
@@ -27,6 +43,7 @@
     function ColumnTable( options ) {
         options( {
             [ $.classNames ]: '',
+            [ $.rowClassNames ]: ( item, index ) => '',
             [ $.items ]: [],
             [ $.columns ]: []
         } );

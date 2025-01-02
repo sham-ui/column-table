@@ -1,0 +1,13 @@
+<template>
+    <button :onclick={{() => onDelete( index )}}>Delete</button>
+</template>
+
+<script>
+    function Actions( options ) {
+        options( {
+            [ $.onDelete ]: () => {}
+        } )
+    }
+
+    export default Component( Template, Actions );
+</script>

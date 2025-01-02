@@ -1,0 +1,13 @@
+<template>
+    {{ getter( item, index ) }}
+</template>
+
+<script>
+    function Content( options ) {
+        options( {
+            [ $.getter ]: () => ''
+        } );
+    }
+
+    export default Component( Template, Content );
+</script>

@@ -6,3 +6,23 @@ html, body {
 main {
   padding: 30px;
 }
+
+.users-table {
+  border-collapse: collapse;
+  width: 400px;
+  & > thead > tr > th {
+    text-align: left;
+    background-color: #ddd;
+  }
+  
+  tr.odd {
+    background-color: #f2f2f2;
+  }
+
+  th, td { 
+    border: 1px solid black;
+    &.age {
+      font-weight: bold;
+    }
+  }
+}
