@@ -25,7 +25,7 @@ export default function resolver( column ) {
  * Otherwise, it defaults to using the Content component.
  *
  * @param {object} column - The column definition containing title and titleClassNames properties.
- * @returns {object} An object containing titleClassNames and either the resolved title or the Content component 
+ * @returns {object} An object containing titleClassNames and either the resolved title or the Content component
  * with an optional titleGetter function.
  */
 
@@ -72,9 +72,11 @@ export function resolveTitle( column ) {
  */
 export function resolveData( column ) {
     const data = column.data;
-    let dataClassNames = column.dataClassNames;
 
-    if ( !dataClassNames ) {
+    let dataClassNames = column.dataClassNames;
+    if ( typeof dataClassNames === 'string' ) {
+        dataClassNames = () => column.dataClassNames;
+    } else if ( !dataClassNames ) {
         dataClassNames = () => '';
     }
 

@@ -11,9 +11,9 @@
             items={{items}}
             rowClassNames={{ ( item, index ) => index % 2 === 0 ? 'even' : 'odd' }}
             columns={{[
-                { title: '#', data: ( item, index ) => index + 1 },
+                { title: '#',    data: ( item, index ) => index + 1 },
                 { title: 'Name', data: item => item.name },
-                { title: 'Age', data: item => item.age, dataClassNames: () => 'age' },
+                { title: 'Age',  data: item => item.age, dataClassNames: 'age' },
                 { 
                     data: Actions, 
                     onDelete: index => state$.items = items.filter( ( _, i ) => i != index )

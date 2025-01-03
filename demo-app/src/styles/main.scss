@@ -10,6 +10,13 @@ main {
 .users-table {
   border-collapse: collapse;
   width: 400px;
+  th, td { 
+    border: 1px solid black;
+    &.age {
+      font-weight: bold;
+    }
+  }
+
   & > thead > tr > th {
     text-align: left;
     background-color: #ddd;
@@ -17,12 +24,5 @@ main {
   
   tr.odd {
     background-color: #f2f2f2;
-  }
-
-  th, td { 
-    border: 1px solid black;
-    &.age {
-      font-weight: bold;
-    }
   }
 }

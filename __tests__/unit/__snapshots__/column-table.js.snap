@@ -6,6 +6,7 @@ Object {
     "classNames": "",
     "columns": Array [],
     "items": Array [],
+    "rowClassNames": [Function],
   },
   "html": "
 <table class=\\"\\">
