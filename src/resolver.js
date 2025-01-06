@@ -9,7 +9,7 @@ import Content from './components/content.sfc';
 
 export default function resolver( column ) {
     return Object.assign(
-        { column: column },
+        { column },
         resolveTitle( column ),
         resolveData( column )
     );

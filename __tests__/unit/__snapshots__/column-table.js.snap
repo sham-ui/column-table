@@ -6,6 +6,7 @@ Object {
     "classNames": "",
     "columns": Array [],
     "items": Array [],
+    "resolver": [Function],
     "rowClassNames": [Function],
   },
   "html": "

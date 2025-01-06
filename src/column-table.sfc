@@ -1,6 +1,5 @@
 <template>
     {% import Dynamic from 'sham-ui-dynamic-component' %}
-    {% import resolver from './resolver' %}
     
     {% let resolvedColumns = columns.map( resolver ) %}
 
@@ -40,14 +39,19 @@
 </template>
 
 <script>
+    import resolver from './resolver';
+
     function ColumnTable( options ) {
         options( {
+            [ $.resolver ]: resolver,
             [ $.classNames ]: '',
             [ $.rowClassNames ]: () => '',
             [ $.items ]: [],
             [ $.columns ]: []
         } );
     }
+
+    export { resolver };
 
     export default Component( Template, ColumnTable );
 </script>
