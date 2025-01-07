@@ -1,5 +1,5 @@
 import { createRootContext } from 'sham-ui';
-import { onclick } from 'sham-ui-directives';
+import { disabled, onclick } from 'sham-ui-directives';
 import App from '../components/App.sfc';
 
 export default function( DI ) {
@@ -9,7 +9,8 @@ export default function( DI ) {
             ID: 'app',
             container: document.querySelector( 'body' ),
             directives: {
-                onclick
+                onclick,
+                disabled
             }
         } )
     );

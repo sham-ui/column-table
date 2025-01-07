@@ -1,4 +1,5 @@
 import Content from './components/content.sfc';
+import Button from './components/button.sfc';
 
 /**
  * Resolves a column by combining the resolved title and data.
@@ -78,6 +79,13 @@ export function resolveData( column ) {
         dataClassNames = () => column.dataClassNames;
     } else if ( !dataClassNames ) {
         dataClassNames = () => '';
+    }
+
+    if ( typeof column.onClick === 'function' ) {
+        return {
+            dataClassNames,
+            data: Button
+        };
     }
 
     if ( isPrimitive( data ) ) {

@@ -5,6 +5,6 @@
       "sham-ui",
       "sham-ui-dynamic-component"
     ],
-    "limit": "1 KB"
+    "limit": "2 KB"
   }
 ]

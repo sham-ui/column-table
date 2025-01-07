@@ -1,0 +1,25 @@
+<template>
+    <button
+        class={{ buttonClassNames( item, index ) }}
+        :disabled={{ disabled( item, index ) }}
+        :onclick={{ () => onClick( item, index ) }}
+    >
+        {% if iconClassNames %}
+            <i class={{ iconClassNames }}></i>
+        {% endif %}
+        {{ buttonText( item, index ) }}
+    </button>
+</template>
+
+<script>
+    function Button( options ) {
+        options( {
+            [ $.buttonText ]: () => '',
+            [ $.buttonClassNames ]: () => '',
+            [ $.disabled ]: () => false,
+            [ $.iconClassNames ]: ''
+        } );
+    }
+
+    export default Component( Template, Button );
+</script>

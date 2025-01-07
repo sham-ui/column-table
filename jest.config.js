@@ -25,7 +25,7 @@ module.exports = {
                 '<rootDir>/node_modules/',
                 '<rootDir>/__tests__/setup-jest.js'
             ],
-            'setupTestFrameworkScriptFile': '<rootDir>/__tests__/setup-jest.js',
+            'setupFilesAfterEnv': [ '<rootDir>/__tests__/setup-jest.js' ],
             'testURL': 'http://column-table.example.com'
         },
         {
