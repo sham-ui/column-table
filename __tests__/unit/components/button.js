@@ -11,3 +11,17 @@ it( 'renders correctly', () => {
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
+
+it( 'buttonText', () => {
+    const meta = renderer( Button, {
+        item: 'Foo',
+        index: 1,
+        buttonText: ( item, index ) => item + index
+    }, {
+        directives: {
+            onclick,
+            disabled
+        }
+    } );
+    expect( meta.toJSON() ).toMatchSnapshot();
+} );

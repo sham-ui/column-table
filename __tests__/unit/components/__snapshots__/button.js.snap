@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`buttonText 1`] = `
+Object {
+  "Options": Object {
+    "buttonClassNames": [Function],
+    "buttonText": [Function],
+    "disabled": [Function],
+    "iconClassNames": "",
+    "index": 1,
+    "item": "Foo",
+  },
+  "html": "<button class=\\"\\"><!--0-->Foo1</button>",
+}
+`;
+
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
