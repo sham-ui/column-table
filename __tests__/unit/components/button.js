@@ -25,3 +25,17 @@ it( 'buttonText', () => {
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
+
+it( 'buttonClassNames', () => {
+    const meta = renderer( Button, {
+        item: 'foo',
+        index: 1,
+        buttonClassNames: ( item, index ) => item + index
+    }, {
+        directives: {
+            onclick,
+            disabled
+        }
+    } );
+    expect( meta.toJSON() ).toMatchSnapshot();
+} );
