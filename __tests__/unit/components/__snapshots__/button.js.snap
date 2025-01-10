@@ -28,6 +28,20 @@ Object {
 }
 `;
 
+exports[`disabled 1`] = `
+Object {
+  "Options": Object {
+    "buttonClassNames": [Function],
+    "buttonText": [Function],
+    "disabled": [Function],
+    "iconClassNames": "",
+    "index": 1,
+    "item": "foo",
+  },
+  "html": "<button class=\\"\\" disabled=\\"\\"><!--0--></button>",
+}
+`;
+
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {

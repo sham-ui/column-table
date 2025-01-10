@@ -39,3 +39,17 @@ it( 'buttonClassNames', () => {
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
+
+it( 'disabled', () => {
+    const meta = renderer( Button, {
+        item: 'foo',
+        index: 1,
+        disabled: ( item, index ) => item === 'foo' && index === 1
+    }, {
+        directives: {
+            onclick,
+            disabled
+        }
+    } );
+    expect( meta.toJSON() ).toMatchSnapshot();
+} );
