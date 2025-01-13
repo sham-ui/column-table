@@ -42,6 +42,22 @@ Object {
 }
 `;
 
+exports[`iconClassNames 1`] = `
+Object {
+  "Options": Object {
+    "buttonClassNames": [Function],
+    "buttonText": [Function],
+    "disabled": [Function],
+    "iconClassNames": "foo",
+  },
+  "html": "
+<button class=\\"\\">
+  <i class=\\"foo\\"></i><!--0-->Text
+</button>
+",
+}
+`;
+
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {

@@ -53,3 +53,16 @@ it( 'disabled', () => {
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
+
+it( 'iconClassNames', () => {
+    const meta = renderer( Button, {
+        iconClassNames: 'foo',
+        buttonText: () => 'Text'
+    }, {
+        directives: {
+            onclick,
+            disabled
+        }
+    } );
+    expect( meta.toJSON() ).toMatchSnapshot();
+} );
