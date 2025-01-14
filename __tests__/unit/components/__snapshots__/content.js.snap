@@ -1,5 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`getter 1`] = `
+Object {
+  "Options": Object {
+    "getter": [Function],
+    "index": 1,
+    "item": "Foo",
+  },
+  "html": "Foo1",
+}
+`;
+
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {
