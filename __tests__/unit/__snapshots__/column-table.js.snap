@@ -19,3 +19,44 @@ Object {
 ",
 }
 `;
+
+exports[`resolver 1`] = `
+Object {
+  "Options": Object {
+    "classNames": "",
+    "columns": Array [
+      Object {
+        "data": "foo",
+        "title": "Foo",
+      },
+    ],
+    "items": Array [
+      1,
+      2,
+      3,
+    ],
+    "resolver": [Function],
+    "rowClassNames": [Function],
+  },
+  "html": "
+<table class=\\"\\">
+  <thead>
+    <tr>
+      <th class=\\"\\">Bar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=\\"\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+    <tr class=\\"\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+    <tr class=\\"\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+  </tbody>
+</table>
+",
+}
+`;
