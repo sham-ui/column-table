@@ -1,5 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`classNames 1`] = `
+Object {
+  "Options": Object {
+    "classNames": "table-class-name",
+    "columns": Array [
+      Object {
+        "data": "foo",
+        "title": "Foo",
+      },
+    ],
+    "items": Array [
+      1,
+      2,
+      3,
+    ],
+    "resolver": [Function],
+    "rowClassNames": [Function],
+  },
+  "html": "
+<table class=\\"table-class-name\\">
+  <thead>
+    <tr>
+      <th class=\\"\\">Foo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=\\"\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+    <tr class=\\"\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+    <tr class=\\"\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+  </tbody>
+</table>
+",
+}
+`;
+
 exports[`renders correctly 1`] = `
 Object {
   "Options": Object {

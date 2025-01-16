@@ -19,3 +19,14 @@ it( 'resolver', () => {
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
+
+it( 'classNames', () => {
+    const meta = renderer( ColumnTable, {
+        columns: [
+            { title: 'Foo', data: 'foo' }
+        ],
+        items: [ 1, 2, 3 ],
+        classNames: 'table-class-name'
+    } );
+    expect( meta.toJSON() ).toMatchSnapshot();
+} );
