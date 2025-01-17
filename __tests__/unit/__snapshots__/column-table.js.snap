@@ -101,3 +101,44 @@ Object {
 ",
 }
 `;
+
+exports[`rowClassNames 1`] = `
+Object {
+  "Options": Object {
+    "classNames": "",
+    "columns": Array [
+      Object {
+        "data": "foo",
+        "title": "Foo",
+      },
+    ],
+    "items": Array [
+      1,
+      2,
+      3,
+    ],
+    "resolver": [Function],
+    "rowClassNames": [Function],
+  },
+  "html": "
+<table class=\\"\\">
+  <thead>
+    <tr>
+      <th class=\\"\\">Foo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class=\\"1 even\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+    <tr class=\\"2 odd\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+    <tr class=\\"3 even\\">
+      <td class=\\"\\">foo</td>
+    </tr>
+  </tbody>
+</table>
+",
+}
+`;

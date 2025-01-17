@@ -30,3 +30,15 @@ it( 'classNames', () => {
     } );
     expect( meta.toJSON() ).toMatchSnapshot();
 } );
+
+
+it( 'rowClassNames', () => {
+    const meta = renderer( ColumnTable, {
+        columns: [
+            { title: 'Foo', data: 'foo' }
+        ],
+        items: [ 1, 2, 3 ],
+        rowClassNames: ( item, index ) => item + ' ' + ( index % 2 === 0 ? 'even' : 'odd' )
+    } );
+    expect( meta.toJSON() ).toMatchSnapshot();
+} );
