@@ -8,7 +8,6 @@ it( 'renders correctly', () => {
     expect( data ).toMatchSnapshot();
 } );
 
-
 it( 'resolveTitle', () => {
     const data = resolveTitle( {
         title: 'Foo',
@@ -16,3 +15,13 @@ it( 'resolveTitle', () => {
     } );
     expect( data ).toMatchSnapshot();
 } );
+
+it( 'resolveTitle titleClassNames', () => {
+    const data = resolveTitle( {
+        title: 'Foo',
+        data: 'Bar',
+        titleClassNames: 'foo bar'
+    } );
+    expect( data ).toMatchSnapshot();
+} );
+

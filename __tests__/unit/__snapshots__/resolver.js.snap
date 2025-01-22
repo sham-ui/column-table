@@ -22,3 +22,11 @@ Object {
   "titleGetter": [Function],
 }
 `;
+
+exports[`resolveTitle titleClassNames 1`] = `
+Object {
+  "title": [Function],
+  "titleClassNames": "foo bar",
+  "titleGetter": [Function],
+}
+`;
