@@ -23,6 +23,13 @@ Object {
 }
 `;
 
+exports[`resolveTitle title 1`] = `
+Object {
+  "title": [Function],
+  "titleClassNames": "foo bar",
+}
+`;
+
 exports[`resolveTitle titleClassNames 1`] = `
 Object {
   "title": [Function],
