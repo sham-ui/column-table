@@ -1,5 +1,5 @@
 import { Component } from 'sham-ui';
-import resolver, { resolveTitle } from '../../src/resolver';
+import resolver, { resolveTitle, resolveData } from '../../src/resolver';
 
 it( 'renders correctly', () => {
     const data = resolver( {
@@ -30,6 +30,13 @@ it( 'resolveTitle title', () => {
     const data = resolveTitle( {
         title: Component(),
         titleClassNames: 'foo bar'
+    } );
+    expect( data ).toMatchSnapshot();
+} );
+
+it( 'resolveData', () => {
+    const data = resolveData( {
+        data: 'Foo'
     } );
     expect( data ).toMatchSnapshot();
 } );

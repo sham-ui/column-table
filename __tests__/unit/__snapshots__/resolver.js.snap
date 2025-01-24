@@ -15,6 +15,14 @@ Object {
 }
 `;
 
+exports[`resolveData 1`] = `
+Object {
+  "data": [Function],
+  "dataClassNames": [Function],
+  "dataGetter": [Function],
+}
+`;
+
 exports[`resolveTitle 1`] = `
 Object {
   "title": [Function],
