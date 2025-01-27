@@ -40,3 +40,11 @@ it( 'resolveData', () => {
     } );
     expect( data ).toMatchSnapshot();
 } );
+
+it( 'resolveData dataClassNames string', () => {
+    const data = resolveData( {
+        data: 'Foo',
+        dataClassNames: 'bar'
+    } );
+    expect( data ).toMatchSnapshot();
+} );
