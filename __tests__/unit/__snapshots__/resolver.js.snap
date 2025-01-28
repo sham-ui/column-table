@@ -31,6 +31,13 @@ Object {
 }
 `;
 
+exports[`resolveData onclik 1`] = `
+Object {
+  "data": [Function],
+  "dataClassNames": [Function],
+}
+`;
+
 exports[`resolveTitle 1`] = `
 Object {
   "title": [Function],

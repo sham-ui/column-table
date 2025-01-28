@@ -48,3 +48,11 @@ it( 'resolveData dataClassNames string', () => {
     } );
     expect( data ).toMatchSnapshot();
 } );
+
+it( 'resolveData onclik', () => {
+    const data = resolveData( {
+        data: 'Foo',
+        onClick: () => {}
+    } );
+    expect( data ).toMatchSnapshot();
+} );
