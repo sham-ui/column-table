@@ -23,6 +23,13 @@ Object {
 }
 `;
 
+exports[`resolveData data 1`] = `
+Object {
+  "data": [Function],
+  "dataClassNames": [Function],
+}
+`;
+
 exports[`resolveData dataClassNames string 1`] = `
 Object {
   "data": [Function],

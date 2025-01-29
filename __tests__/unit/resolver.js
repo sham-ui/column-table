@@ -56,3 +56,10 @@ it( 'resolveData onclik', () => {
     } );
     expect( data ).toMatchSnapshot();
 } );
+
+it( 'resolveData data', () => {
+    const data = resolveData( {
+        data: Component()
+    } );
+    expect( data ).toMatchSnapshot();
+} );
