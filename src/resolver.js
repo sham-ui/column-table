@@ -4,8 +4,8 @@ import Button from './components/button.sfc';
 /**
  * Resolves a column by combining the resolved title and data.
  *
- * @param {object} column - Column definition.
- * @returns {object} Resolved column with title and data.
+ * @param {Object} column - Column definition.
+ * @returns {Object} Resolved column with title and data.
  */
 
 export default function resolver( column ) {
@@ -25,8 +25,8 @@ export default function resolver( column ) {
  * If the title is a class, it returns the title as is.
  * Otherwise, it defaults to using the Content component.
  *
- * @param {object} column - The column definition containing title and titleClassNames properties.
- * @returns {object} An object containing titleClassNames and either the resolved title or the Content component
+ * @param {Object} column - The column definition containing title and titleClassNames properties.
+ * @returns {Object} An object containing titleClassNames and either the resolved title or the Content component
  * with an optional titleGetter function.
  */
 
@@ -59,8 +59,8 @@ export function resolveTitle( column ) {
 /**
  * Resolves column data.
  *
- * @param {object} column - Column definition.
- * @returns {object} Resolved column data.
+ * @param {Object} column - Column definition.
+ * @returns {Object} Resolved column data.
  *
  * If column data is a primitive value, function returns object with data
  * set to Content component and dataGetter as a function that returns the

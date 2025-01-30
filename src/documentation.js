@@ -1,6 +1,7 @@
 /**
  * Options for ColumnTable
  * @typedef {Object} ColumnTableOptions
+ * @property {string} classNames Table class names
  */
 
 /**
