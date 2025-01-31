@@ -42,8 +42,8 @@ Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 -   `columns` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[ColumnTableOptions](#columntableoptions)>** Table columns
 -   `items` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** Table items (rows)
--   `classNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for <table>
--   `rowClassNames` **function (item: any, index: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)): [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for <tr>
+-   `classNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for `<table>`
+-   `rowClassNames` **function (item: any, index: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)): [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for `<tr>`
 -   `resolver` **function (column: any)** Resolver function for overriding default column resolver
 
 #### ColumnTableOptions
@@ -54,8 +54,8 @@ Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 ##### Properties
 
--   `titleClassNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for <th>
--   `dataClassNames` **any** Class names for <td>
+-   `titleClassNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for `<th>`
+-   `dataClassNames` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function))** Class names for `<td>`
 -   `title` **any** Definition of column title
 -   `data` **any** Definition of column data
 -   `onClick` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Click handler for data
