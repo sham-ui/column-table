@@ -26,8 +26,10 @@ yarn add column-table
 
 -   [ColumnTableOptions](#columntableoptions)
     -   [Properties](#properties)
--   [ColumnTable](#columntable)
+-   [ColumnTableOptions](#columntableoptions-1)
     -   [Properties](#properties-1)
+-   [ColumnTable](#columntable)
+    -   [Properties](#properties-2)
     -   [Examples](#examples)
 
 #### ColumnTableOptions
@@ -38,7 +40,29 @@ Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 ##### Properties
 
--   `classNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Table class names
+-   `columns` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[ColumnTableOptions](#columntableoptions)>** Table columns
+-   `items` **[Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)** Table items (rows)
+-   `classNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for <table>
+-   `rowClassNames` **function (item: any, index: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)): [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for <tr>
+-   `resolver` **function (column: any)** Resolver function for overriding default column resolver
+
+#### ColumnTableOptions
+
+Column definition
+
+Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)
+
+##### Properties
+
+-   `titleClassNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for <th>
+-   `dataClassNames` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function))** Class names for <td>
+-   `title` **any** Definition of column title
+-   `data` **any** Definition of column data
+-   `onClick` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Click handler for data
+-   `buttonText` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Text for button
+-   `buttonClassNames` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Class names for button
+-   `disabled` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Disabled state for button
+-   `iconClassNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for button icon
 
 #### ColumnTable
 
