@@ -55,7 +55,7 @@ Type: [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 ##### Properties
 
 -   `titleClassNames` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** Class names for <th>
--   `dataClassNames` **([string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function))** Class names for <td>
+-   `dataClassNames` **any** Class names for <td>
 -   `title` **any** Definition of column title
 -   `data` **any** Definition of column data
 -   `onClick` **[function](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function)** Click handler for data

@@ -12,7 +12,7 @@
  * Column definition
  * @typedef {Object} ColumnTableOptions
  * @property {string} titleClassNames Class names for <th>
- * @property {string|function} dataClassNames Class names for <td>
+ * @property {*} dataClassNames Class names for <td>
  * @property {*} title Definition of column title
  * @property {*} data Definition of column data
  * @property {function} onClick Click handler for data
